@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About jsonpickle
 ================
 
@@ -18,8 +14,17 @@ Summary: Python library for serializing any arbitrary object graph into JSON. It
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/jsonpickle-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/jsonpickle-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3026&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jsonpickle-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
