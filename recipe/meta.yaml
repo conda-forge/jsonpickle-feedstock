@@ -38,7 +38,6 @@ about:
   dev_url: https://github.com/jsonpickle/jsonpickle
   license: BSD-3-Clause
   license_family: BSD
-  # Manually packaged. See: https://github.com/jsonpickle/jsonpickle/pull/304
   license_file: LICENSE
 
 extra:
