@@ -21,8 +21,10 @@ requirements:
     - pip
     - python
     - setuptools
+    - setuptools_scm
   run:
     - python
+    - importlib_metadata
 
 test:
   imports:
@@ -41,3 +43,4 @@ extra:
   recipe-maintainers:
     - robmcmullen
     - ChrisBarker-NOAA
+    - synapticarbors
