@@ -5,11 +5,11 @@ Home: http://jsonpickle.github.io/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jsonpickle-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python library for serializing any arbitrary object graph into JSON. It can take almost any Python object and turn the object into JSON. Additionally, it can reconstitute the object back into Python.
 
-
+Development: https://github.com/jsonpickle/jsonpickle
 
 Current build status
 ====================
@@ -118,4 +118,5 @@ Feedstock Maintainers
 
 * [@ChrisBarker-NOAA](https://github.com/ChrisBarker-NOAA/)
 * [@robmcmullen](https://github.com/robmcmullen/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
