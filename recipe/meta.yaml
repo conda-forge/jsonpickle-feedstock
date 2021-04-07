@@ -19,12 +19,12 @@ build:
 requirements:
   host:
     - pip
-    - python[version='2.7.*|>=3.4']
+    - python >=2.7
     - setuptools
     - setuptools_scm
     - toml
   run:
-    - python[version='2.7.*|>=3.4']
+    - python >=2.7
     - importlib_metadata
 
 test:
