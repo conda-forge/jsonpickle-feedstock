@@ -5,11 +5,11 @@ Home: http://jsonpickle.github.io/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jsonpickle-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python library for serializing any arbitrary object graph into JSON. It can take almost any Python object and turn the object into JSON. Additionally, it can reconstitute the object back into Python.
 
-
+Development: https://github.com/jsonpickle/jsonpickle
 
 Current build status
 ====================
@@ -38,6 +38,7 @@ Installing `jsonpickle` from the `conda-forge` channel can be achieved by adding
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `jsonpickle` can be installed with:
@@ -108,9 +109,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
@@ -118,4 +119,5 @@ Feedstock Maintainers
 
 * [@ChrisBarker-NOAA](https://github.com/ChrisBarker-NOAA/)
 * [@robmcmullen](https://github.com/robmcmullen/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
