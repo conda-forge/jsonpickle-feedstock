@@ -1,6 +1,8 @@
 {% set name = "jsonpickle" %}
+
 {% set version = "1.5.1" %}
 {% set sha256 = "060f97096559d1b86aa16cac2f4ea5f7b6da0c15d8a4de150b78013a886f9a51" %}
+
 
 package:
   name: {{ name|lower }}
@@ -19,12 +21,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
     - setuptools
     - setuptools_scm
     - toml
   run:
-    - python
+    - python >=2.7
     - importlib_metadata
 
 test:
