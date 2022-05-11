@@ -21,13 +21,17 @@ requirements:
     - pip
     - python =2.7|>=3.5
     - setuptools
-    - setuptools_scm
+    - setuptools_scm >=3.4.1
     - toml
   run:
     - python =2.7|>=3.5
     - importlib_metadata
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - jsonpickle
 
