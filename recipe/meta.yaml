@@ -13,20 +13,19 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
     - python >=3.7
-    - setuptools <59
+    - setuptools >=42
     - setuptools_scm >=3.4.1
     - toml
   run:
     - python >=3.7
     - importlib_metadata
-    - setuptools <59
 
 test:
   requires:
