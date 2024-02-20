@@ -1,6 +1,6 @@
 {% set name = "jsonpickle" %}
-{% set version = "3.0.2" %}
-{% set sha256 = "e37abba4bfb3ca4a4647d28bb9f4706436f7b46c8a8333b4a718abafa8e46b37" %}
+{% set version = "3.0.3" %}
+{% set sha256 = "5691f44495327858ab3a95b9c440a79b41e35421be1a6e09a47b6c9b9421fd06" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
