@@ -1,6 +1,6 @@
 {% set name = "jsonpickle" %}
-{% set version = "3.4.0" %}
-{% set sha256 = "83ca3836af4bfe00cbc45ac5965abdbe7853736696eb6f17f6473240b2172798" %}
+{% set version = "3.4.1" %}
+{% set sha256 = "411d46e1f2e6eedeb15b4fb1e8b9e152bf710d1130432b61836005bc9240393d" %}
 
 package:
   name: {{ name|lower }}
