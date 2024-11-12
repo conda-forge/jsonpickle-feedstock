@@ -1,6 +1,7 @@
 context:
   name: jsonpickle
   version: 4.0.0
+  python_min: "3.8"
 
 package:
   name: ${{ name|lower }}
