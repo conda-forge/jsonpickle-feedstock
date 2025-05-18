@@ -1,7 +1,8 @@
+schema_version: 1
+
 context:
   name: jsonpickle
-  version: 4.0.0
-  python_min: "3.8"
+  version: 4.0.5
 
 package:
   name: ${{ name|lower }}
@@ -9,17 +10,17 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: fc670852b204d77601b08f8f9333149ac37ab6d3fe4e6ed3b578427291f63736
+  sha256: f299818b39367c361b3f26bdba827d4249ab5d383cd93144d0f94b5417aacb35
 
 build:
   number: 0
   noarch: python
-  script: ${{ PYTHON }} -m pip install . --no-deps -vv
+  script: ${{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
     - pip
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - setuptools >=61.2
     - setuptools_scm >=6.0
     - toml
@@ -31,11 +32,7 @@ tests:
       imports:
         - jsonpickle
       pip_check: true
-  - script:
-      - python -c "import jsonpickle"
-    requirements:
-      run:
-        - python ${{ python_min }}
+      python_version: ${{ python_min }}.*
 
 about:
   summary: Python library for serializing any arbitrary object graph into JSON. It can take almost any Python object and turn the object into JSON. Additionally, it can reconstitute the object back into Python.
