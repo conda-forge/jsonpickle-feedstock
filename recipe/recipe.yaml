@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: jsonpickle
-  version: "4.1.1"
+  version: "4.1.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: f86e18f13e2b96c1c1eede0b7b90095bbb61d99fedc14813c44dc2f361dbbae1
+  sha256: 8afed18aa189fd81e2e833b426bb4af485594921f0b1d36c2001fc5637a2f210
 
 build:
   number: 0
